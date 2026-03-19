@@ -164,24 +164,31 @@ class HomePage extends StatelessWidget {
                                 color: Colors.white,
                                 fontSize: 26,
                                 fontWeight: 
-                                FontWeight.bold)),
+                                FontWeight.bold)
+                              ),
                             Icon(Icons.visibility_off,
                             color: Colors.white)
                           ],
                         ),
                       
-                      SizedBox(height: 15),
+                      const SizedBox(height: 15),
                        Row(
                           mainAxisAlignment: 
                           MainAxisAlignment.spaceBetween,
                           children: const[
-                            Text("Semua Rekeningmu",
+                            Text("Saldo Tersedia",
                             style: TextStyle(
-                              color: Colors.white)),
-                              Icon(Icons.arrow_forward,
                               color: Colors.white)
+                              ),
+                              Text(
+                                "Klik Untuk Sembunyikan",
+                                style: TextStyle(
+                                  color: Colors.white70,
+                                  fontSize: 12,
+                              ),
+                            ),
                           ],
-                        )
+                        ),
                       ],
                     ),
                   ),
@@ -238,16 +245,8 @@ class HomePage extends StatelessWidget {
                   ),
                 ),
 
-                   const SizedBox(height: 30),
-                  ],
-                ),
-              ),
-            ],
-          ),
-        ),
-      );
-    }
-  }
+                    const SizedBox(height: 30),
+                 
 
 
 // MENU ICON 
