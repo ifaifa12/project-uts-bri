@@ -69,14 +69,14 @@ class HomePage extends StatelessWidget {
            ),
          ),
 
-         // BRI MOBILE DI ATAS TENGAH
+         // BRI MOBILE 
          const Positioned(
           top: 10,
           left: 0,
           right: 0,
           child: Center(
             child: Text (
-              "BRI mobile",
+              ".....BRI mobile",
               style: TextStyle(
                 color: Colors.white,
                 fontSize: 20,
@@ -101,10 +101,9 @@ class HomePage extends StatelessWidget {
                   mainAxisAlignment:
                    MainAxisAlignment.spaceBetween,
                   children: [
-                    Column(
-                      crossAxisAlignment: 
-                      CrossAxisAlignment.start,
-                      children: const [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
 
                         Text(
                           "12.02",
