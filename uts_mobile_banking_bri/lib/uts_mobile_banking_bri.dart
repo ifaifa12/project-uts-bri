@@ -173,27 +173,31 @@ class HomePage extends StatelessWidget {
                       
                       const SizedBox(height: 15),
                        Row(
-                          mainAxisAlignment: 
-                          MainAxisAlignment.spaceBetween,
                           children: const[
                             Text("Saldo Tersedia",
                             style: TextStyle(
-                              color: Colors.white)
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 13,
                               ),
+                            ),
+                              SizedBox(width: 5),
                               Text(
                                 "Klik Untuk Sembunyikan",
                                 style: TextStyle(
                                   color: Colors.white70,
-                                  fontSize: 12,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 13,
                               ),
                             ),
                           ],
                         ),
                       ],
                     ),
-                  ),
+                   ),
                 ),
-
+    
+                
                   const SizedBox(height: 20),
 
                 // MENU CEPAT
@@ -249,11 +253,11 @@ class HomePage extends StatelessWidget {
               ],
             ),
           ),
-          ],
-        ),
+        ],
       ),
-    );
-  }
+    ),
+  );
+ }
 }
                  
 
