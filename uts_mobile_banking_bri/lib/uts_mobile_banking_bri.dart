@@ -87,6 +87,12 @@ class HomePage extends StatelessWidget {
                       crossAxisAlignment: 
                       CrossAxisAlignment.start,
                       children: const [
+
+                        Text(
+                          "12.02",
+                          style:TextStyle(color: Colors.white),
+                        ),
+                        SizedBox(height: 5),
                         Text(
                           "BRIMO",
                           style: TextStyle(
@@ -96,11 +102,6 @@ class HomePage extends StatelessWidget {
                           ),
                         ),
                         SizedBox(height: 5),
-
-                        Text(
-                          "00.50", 
-                          style: TextStyle(
-                            color: Colors.white)),
                         Text(
                           "Selamat Pagi,",
                            style: TextStyle(
