@@ -69,6 +69,24 @@ class HomePage extends StatelessWidget {
            ),
          ),
 
+         // BRI MOBILE DI ATAS TENGAH
+         const Positioned(
+          top: 10,
+          left: 0,
+          right: 0,
+          child: Center(
+            child: Text (
+              "BRI mobile",
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+                letterSpacing: 1,
+              ),
+            ),
+          ),
+        ),
+
          //CONTENT
           SingleChildScrollView(
             child: Column(
@@ -194,7 +212,7 @@ class HomePage extends StatelessWidget {
                         ),
                       ],
                     ),
-                   ),
+                  ),
                 ),
     
                 
