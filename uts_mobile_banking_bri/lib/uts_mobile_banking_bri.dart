@@ -70,22 +70,27 @@ class HomePage extends StatelessWidget {
          ),
 
          // BRI MOBILE 
-         const Positioned(
-          top: 10,
-          left: 0,
-          right: 0,
+          const Expanded(
           child: Center(
             child: Text (
               ".....BRI mobile",
               style: TextStyle(
                 color: Colors.white,
-                fontSize: 20,
+                fontSize: 18,
                 fontWeight: FontWeight.bold,
-                letterSpacing: 1,
               ),
             ),
           ),
         ),
+        Row(
+          children: const[
+            Icon(Icons.notifications_none, color: Colors.white),
+            SizedBox(width: 10),
+            Icon(Icons.headset_mic, color: Colors.white),
+          ],
+        ),
+      ],
+    ),
 
          //CONTENT
           SingleChildScrollView(
