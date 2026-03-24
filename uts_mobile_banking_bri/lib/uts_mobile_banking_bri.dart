@@ -86,7 +86,7 @@ class HomePage extends StatelessWidget {
                         style: TextStyle( color: Colors.white),
                       ),
                       const Text(
-                        "BRI MOBILE",
+                        ".....BRI MOBILE",
                         style: TextStyle(
                           color: Colors.white,
                           fontWeight: FontWeight.bold
@@ -108,9 +108,11 @@ class HomePage extends StatelessWidget {
                     const SizedBox(height: 20),
 
                     // SAPAAN
-                    const Padding(
+                    Padding(
                       padding: EdgeInsets.symmetric(horizontal: 16),
-                      child: Text(
+                      child: Align(
+                        alignment: Alignment.centerLeft,
+                        child: Text(
                         "Selamat Pagi, Ifa",
                         style: TextStyle(
                           color: Colors.white,
@@ -118,10 +120,13 @@ class HomePage extends StatelessWidget {
                         ),
                       ),
                     ),
+                  ),
+
+                    const SizedBox(height: 20),
 
                 // CARD SALDO
                 Transform.translate(
-                  offset: const Offset(0, -20), 
+                  offset: const Offset(0, -10), 
                   child: Container(
                   margin: const EdgeInsets.symmetric(horizontal: 12),
                   padding: const EdgeInsets.all(20),
@@ -179,7 +184,7 @@ class HomePage extends StatelessWidget {
                               Text(
                                 "Klik Untuk Sembunyikan",
                                 style: TextStyle(
-                                  color: Colors.white70,
+                                  color: Colors.white,
                                   fontWeight: FontWeight.bold,
                                   fontSize: 13,
                               ),
