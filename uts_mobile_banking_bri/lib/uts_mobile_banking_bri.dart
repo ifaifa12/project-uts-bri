@@ -108,12 +108,13 @@ class HomePage extends StatelessWidget {
                     const SizedBox(height: 20),
 
                     // SAPAAN
-                    const Align(
-                      alignment: Alignment.centerLeft,
+                    const Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 16),
                       child: Text(
                         "Selamat Pagi, Ifa",
                         style: TextStyle(
-                          color: Colors.white70,
+                          color: Colors.white,
+                          fontSize: 14,
                         ),
                       ),
                     ),
