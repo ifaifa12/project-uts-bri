@@ -53,8 +53,7 @@ class HomePage extends StatelessWidget {
           BottomNavigationBarItem(icon: Icon(Icons.person), label: "Akun"),
         ],
       ),
-
-      // BODY UTAMA
+   
       body: SafeArea(
         child: Stack(
           children: [
@@ -69,29 +68,6 @@ class HomePage extends StatelessWidget {
            ),
          ),
 
-         // BRI MOBILE 
-          const Expanded(
-          child: Center(
-            child: Text (
-              ".....BRI mobile",
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 18,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-          ),
-        ),
-        Row(
-          children: const[
-            Icon(Icons.notifications_none, color: Colors.white),
-            SizedBox(width: 10),
-            Icon(Icons.headset_mic, color: Colors.white),
-          ],
-        ),
-      ],
-    ),
-
          //CONTENT
           SingleChildScrollView(
             child: Column(
@@ -100,56 +76,47 @@ class HomePage extends StatelessWidget {
                 const SizedBox(height: 20),
 
                 // HEADER
-               Padding(
+                Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 8),
                 child: Row(
-                  mainAxisAlignment:
-                   MainAxisAlignment.spaceBetween,
-                  children: [
-                    Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-
-                        Text(
-                          "12.02",
-                          style:TextStyle(color: Colors.white),
+                     children: [
+                      const Text(
+                        "12.02",
+                        style: TextStyle( color: Colors.white),
+                      ),
+                      const Text(
+                        "BRI MOBILE",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold
                         ),
-                        SizedBox(height: 5),
-                        Text(
-                          "BRIMO",
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 18,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                        SizedBox(height: 5),
-                        Text(
-                          "Selamat Pagi,",
-                           style: TextStyle(
-                            color: Colors.white70)),
-                        Text(
-                          "Ifa",
-                           style: TextStyle
-                           ( color: Colors.white,
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold)),
-                      ],
-                    ),
-                    Row(
-                      children: const[
-                        Icon(Icons.notifications_none,
-                        color: Colors.white),
-                        SizedBox(width: 10),
-                        Icon(Icons.headset_mic, 
-                        color: Colors.white),
-                      ],
-                    )
-                  ],
+                      ),
+                      Row(
+                        children: const[
+                          Icon(Icons.notifications_none,
+                          color: Colors.white),
+                          SizedBox(width: 10),
+                          Icon(Icons.headset_mic,
+                          color: Colors.white),
+                        ],
+                      ),
+                    ],
+                  ),
                 ),
-              ),
 
-                const SizedBox(height: 20),
+                    const SizedBox(height: 20),
+
+                    // SAPAAN
+                    const Align(
+                      alignment: Alignment.centerLeft,
+                      child: Text(
+                        "Selamat Pagi, Ifa",
+                        style: TextStyle(
+                          color: Colors.white70,
+                        ),
+                      ),
+                    ),
 
                 // CARD SALDO
                 Transform.translate(
@@ -160,21 +127,25 @@ class HomePage extends StatelessWidget {
                   decoration: BoxDecoration(
                     color: Colors.blue[900],
                     borderRadius: BorderRadius.circular(20),
-                    boxShadow: const [BoxShadow(
-                      color: Colors.black12,
-                      blurRadius: 10,
-                      offset: Offset(0, 15),
-                    )
-                  ],
-                ),
+                    boxShadow: const [
+                      BoxShadow(
+                        color: Colors.black12,
+                        blurRadius: 10,
+                        offset: Offset(0, 10),
+                      ),
+                    ],
+                  ),
+
                     child: Column(
                       crossAxisAlignment: 
                       CrossAxisAlignment.start,
                       children: [
+
                         const Text(
                           "Saldo Rekening Utama",
                           style:
-                           TextStyle(color: Colors.white70)),
+                           TextStyle(color: Colors.white70)
+                          ),
                         const SizedBox(height: 10),
                         Row(
                           mainAxisAlignment:
@@ -272,15 +243,15 @@ class HomePage extends StatelessWidget {
                 ),
 
                     const SizedBox(height: 30),
-              ],
-            ),
+                  ],
+                ),
+              ),
+            ],
           ),
-        ],
-      ),
-    ),
-  );
- }
-}
+        ),
+      );
+    }
+  }
                  
 
 
